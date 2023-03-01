@@ -43,10 +43,13 @@ def calculate_cgpa(scores, credit_hours):
     else:
         return total_quality_points / total_credit_hours
 
-
+# make a main function
 cgpa = calculate_cgpa(scores, credit_hours)
 
 print("\nCourses and scores:")
 for course, score, credit_hour in zip(courses, scores, credit_hours):
     print("{}: {} ({} credits)".format(course, score, credit_hour))
 print("\nCGPA: {:.2f}".format(cgpa))
+
+# correct d score_point_map
+# consider the error in
